@@ -2,10 +2,28 @@ li:hover {
     background-color: rgb(145, 167, 180);
     font-size: x-large;
     cursor: pointer;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 li:active {
     background-color: rgb(100, 123, 148);
     font-style: italic;
+}
+
+li::before {
+    content: "☑️";
+}
+
+li:hover::after {
+    content: "Vote For Me!";
+    margin-left: 15px;
+    font-weight: bold;
+    color: blue;
+}
+
+li:active::before {
+    content: "✅"
+}
+
+ul {
+    list-style: none;
 }
