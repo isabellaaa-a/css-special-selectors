@@ -11,5 +11,38 @@
     font-size: 80px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    background-color: coral;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
 /* Add your CSS styles below this line */
 
+p:hover::after {
+    content: "now $29";
+    margin-left: 5px;
+    color: red;
+}
+
+a:hover {
+    background-color: rgb(253, 228, 219);
+    border: 2px solid coral;
+    color: coral;
+}
+
+a:active {
+    background-color: red;
+    color: white;
+}
+
+.card::before {
+    content: "SALE";
+    background-color: red;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+}
