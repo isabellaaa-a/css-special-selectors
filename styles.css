@@ -1,0 +1,11 @@
+li:hover {
+    background-color: rgb(145, 167, 180);
+    font-size: x-large;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li:active {
+    background-color: rgb(100, 123, 148);
+    font-style: italic;
+}
